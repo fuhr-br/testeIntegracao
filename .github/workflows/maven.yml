@@ -18,9 +18,9 @@ jobs:
     run: |
       sudo systemctl start postgresql.service
       pg_isready  
-  - name: Create scheduler user
+  - name: Create root user
     run: |
-      sudo -u postgres psql --command="CREATE USER root PASSWORD 'root'" --command="du"
+      sudo -u postgres psql --command="CREATE USER root PASSWORD 'root'"
   - name: Create timetable database
     run: |
       sudo -u postgres createdb --owner=root coracoes_da_lila
