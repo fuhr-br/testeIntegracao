@@ -1,5 +1,3 @@
-CREATE USER lila WITH PASSWORD 'lila';
-
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 
 CREATE TABLE IF NOT EXISTS public.tb_admin (
